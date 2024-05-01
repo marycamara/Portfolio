@@ -1,0 +1,44 @@
+ .wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     /* This ensures the wrapper takes up the full viewport height */
+     text-align: center;
+     /* Optionally, center-align text within the wrapper */
+ }
+
+ body {
+     background-color: #252626;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     max-width: 800px;
+     margin: auto;
+     padding-top: 50px;
+ }
+
+ p {
+     color: #5B5252;
+     font-size: 17px;
+ }
+
+ h1 {
+     text-align: left;
+     color: #f8f8f8;
+     font-size: 30px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     position: relative;
+ }
+
+ h1::before {
+     /* Use ::before instead of ::after */
+     content: "";
+     position: absolute;
+     top: 50%;
+     right: 110%;
+     /* Adjust the position to move the line to the left of the h1 */
+     width: 100px;
+     height: 2px;
+     background-color: #ffffff;
+     transform: translateY(-50%);
+ }

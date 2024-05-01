@@ -1,0 +1,45 @@
+/*  top nav starts..... */
+/* the background color for this nav bar is blank   */
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: none;
+    /* Add your background color here */
+}
+
+.topnav-right {
+    text-align: right;
+    /* Align the links to the right */
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* this changes the color of the links inside the nav which is white and the text color is black  */
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 10px 16px;
+    /* Adjust padding for spacing */
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 50px;
+    /* Apply border-radius directly to the link */
+    display: inline-block;
+    /* Ensure the border-radius is visible */
+}
+
+.topnav a:hover {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #7a7c81;
+    color: white;
+}
