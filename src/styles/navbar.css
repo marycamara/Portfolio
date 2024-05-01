@@ -1,4 +1,12 @@
-/*  top nav starts..... */
+/* this is the main title/name of the website   */
+header {
+    font-size: 110px;
+    text-align: center;
+    color: #5B5252;
+    font-weight: bold;
+
+}
+
 /* the background color for this nav bar is blank   */
 .topnav {
     width: 100%;
