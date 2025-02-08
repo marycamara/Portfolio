@@ -1,0 +1,25 @@
+/* Style for the header title */
+.header-title {
+    color: #7e4a35;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+
+    
+}
+
+/* Responsive design: adjust font size on smaller screens */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 480){
+    .header-title {
+        font-size: 20px;
+    }
+}
