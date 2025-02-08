@@ -1,42 +1,71 @@
+/* General Styling for NavBar */
 .topnav {
     display: flex;
-    justify-content: space-between; /* Spreads the navigation and contacts items */
+    justify-content: space-between; /* Align navigation and contact components */
     align-items: center;
-    padding: 10px;
-   
-  
-
+    padding: 15px 30px; /* More padding for a spacious layout */
+    position: -webkit-sticky; /* Add support for Safari iOS versions < 13 */
+    position: sticky; /* Ensure sticky behavior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background-color: #252626; /* Background color for navbar */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 100%; /* Ensure navbar width stretches across */
 }
 
+/* Ensure no other elements are conflicting with sticky positioning */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header Title Styling */
+.HeaderTitle {
+    flex-grow: 1;
+    font-size: 2rem; /* Larger font for the header title */
+    color: #f8f8f8; /* White color for the title */
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Navigation Links Container */
 .nav-links {
     display: flex;
+    gap: 20px; /* Equal spacing between links */
 }
 
-/* this for for the text apsect of the top nav  */
+/* Navigation Link Styles */
 .nav-links a {
-    margin-right: 20px;
-    color: rgb(255, 253, 253); /* Make text white */
+    color: #f8f8f8;
     text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
- /* text bacground  */
+/* Active Link Styling */
+.nav-links a.active {
+    color: #64ffda;
+    background-color: rgba(98, 93, 94, 0.8);
+}
+
+/* Navigation Link Hover Effect */
 .nav-links a:hover {
-    background-color: rgb(98, 93, 94);
-    padding: 10px;
-    border-radius: 50px;
-    color: #64ffda
-    
-
+    background-color: #64ffda;
+    color: #252626; /* Dark background on hover */
 }
 
-/*  contact me starts here   */
-/*  ////////////  */
+/* Contact Links Styling */
 .contact-links {
     display: flex;
     align-items: center;
 }
 
-/*  this is for the contactsme  */
+/* Styling for Social Media Links */
 #social {
     display: flex;
     list-style: none;
@@ -44,5 +73,23 @@
 }
 
 #social li {
-    margin-left: 10px;
+    margin-left: 15px; /* Increased margin for better spacing */
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduced gap for mobile */
+        width: 100%; /* Full-width nav links */
+    }
+
+    .HeaderTitle {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
 }

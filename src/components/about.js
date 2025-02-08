@@ -1,19 +1,39 @@
 import React from "react";
-import "../styles/about.css";  // Ensure the path is correct relative to this file
+import "../styles/home.css";
+import "../styles/about.css";
+import Skills from "./Skills";
+import mainphoto from "../assets/mainphoto.jpg";
 
 function About() {
     return (
-        <section id="about-me">
-            <div className="about-me"> 
+        <>
+            <section id="about-me">
                 <h1 className="aboutme-section">About Me</h1>
-                <img src="images/mainphoto.jpg" className="personal-img" alt="Mary Camara" />
-                
-                <div className="about-me-paragraph">
-                    <p>I'm Mary Camara, a Computer Science student currently in the final year of my BSc in Computer Science at Coventry University. I bring a wealth of project-based experience to the table. With a solid foundation in programming logic and expertise in languages like Python and C++, I'm well-equipped to tackle complex challenges. I'm passionate about technology, especially full-stack development, Artificial Intelligence, and Deep Learning.</p>
-                    <p>Beyond academics, I'm keen on staying updated with the latest scientific developments that shape our future.</p>
+                <div className="about-me">
+                    <img src={mainphoto} className="personal-img" alt="Mary Camara" />
+                    <div className="about-me-paragraph">
+                        <p>
+                            I am a Software Engineer at the BBC, where I contribute to building innovative digital solutions that enhance user experiences. 
+                            I work with cutting-edge technologies to develop scalable and high-performance applications that serve millions of users.
+                        </p>
+                        {/* Skills List */}
+                        <div className="skills-list">
+                            <span className="skill">Python</span>
+                            <span className="skill">Java</span>
+                            <span className="skill">C++</span>
+                            <span className="skill">JavaScript ES6</span>
+                            <span className="skill">React.js</span>
+                            <span className="skill">TypeScript</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div className="skills-section-wrapper">
+                    <section id="skills">
+                        <Skills />
+                    </section>
+                </div>
+            </section>
+        </>
     );
 }
 

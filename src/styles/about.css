@@ -1,0 +1,120 @@
+/* About Me Section */
+.aboutme-section {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* About Me Container */
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+   
+    
+   
+}
+
+/* Paragraph Style */
+.about-me-paragraph {
+    font-size: 20px;
+    color: #7e4a35;
+    line-height: 1.8;
+    max-width: 600px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+
+
+/* Skills List Container */
+.skills-list {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Individual Skill Styling */
+.skills-list .skill {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.skills-list .skill:hover {
+    background-color: #7e4a35;
+}
+
+/* Personal Image Style */
+.personal-img {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.personal-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 35px rgba(255, 255, 255, 0.3);
+}
+
+/* Skills Section */
+.skills-section-wrapper {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Header */
+#skills {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutme-section {
+        font-size: 36px;
+        padding-left: 15px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .about-me-paragraph {
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .personal-img {
+        width: 270px;
+        height: 250px;
+    }
+}
