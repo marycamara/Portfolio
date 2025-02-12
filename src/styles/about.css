@@ -1,7 +1,6 @@
 /* About Me Section */
 .aboutme-section {
     font-size: 48px;
-    color: #fff;
     margin-bottom: 40px;
     font-weight: bold;
     text-align: left;
@@ -17,27 +16,27 @@
     justify-content: space-between;
     gap: 30px;
     padding: 50px;
-   
-    
-   
 }
 
-/* Paragraph Style */
-.about-me-paragraph {
-    font-size: 20px;
-    color: #7e4a35;
+.about-me-text {
+font-size: 15px;
+    color: #dbc4b4;
     line-height: 1.8;
     max-width: 600px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
 }
 
 
+/* Skills text */
+.skill-text {
+    color: #dbc4b4;
+}
 
 /* Skills List Container */
 .skills-list {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 10px;
     color: #e0e0e0;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +46,7 @@
 
 /* Individual Skill Styling */
 .skills-list .skill {
-    background-color: #333;
+    background-color: #352118;
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
@@ -58,13 +57,13 @@
 }
 
 .skills-list .skill:hover {
-    background-color: #7e4a35;
+    background-color: #462d20;
 }
 
 /* Personal Image Style */
 .personal-img {
     height: 350px;
-    width: 300px;
+    width: 450px;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.2);

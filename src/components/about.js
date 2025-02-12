@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/home.css";
 import "../styles/about.css";
-import Skills from "./Skills";
+//import Skills from "./Skills";
 import mainphoto from "../assets/mainphoto.jpg";
 
 function About() {
@@ -12,11 +12,13 @@ function About() {
                 <div className="about-me">
                     <img src={mainphoto} className="personal-img" alt="Mary Camara" />
                     <div className="about-me-paragraph">
-                        <p>
+                    
+                        <p className="about-me-text">
                             I am a Software Engineer at the BBC, where I contribute to building innovative digital solutions that enhance user experiences. 
                             I work with cutting-edge technologies to develop scalable and high-performance applications that serve millions of users.
                         </p>
                         {/* Skills List */}
+                          <p className="skill-text"> technologies i have worked with. </p>
                         <div className="skills-list">
                             <span className="skill">Python</span>
                             <span className="skill">Java</span>
@@ -27,11 +29,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="skills-section-wrapper">
-                    <section id="skills">
-                        <Skills />
-                    </section>
-                </div>
+               
             </section>
         </>
     );

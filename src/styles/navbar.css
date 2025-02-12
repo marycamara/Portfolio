@@ -27,7 +27,7 @@ body, html {
 .HeaderTitle {
     flex-grow: 1;
     font-size: 2rem; /* Larger font for the header title */
-    color: #f8f8f8; /* White color for the title */
+    color: #dbc4b4; /* White color for the title */
     font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -39,7 +39,7 @@ body, html {
 
 /* Navigation Link Styles */
 .nav-links a {
-    color: #f8f8f8;
+    color: #dbc4b4;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 15px;
@@ -55,8 +55,8 @@ body, html {
 
 /* Navigation Link Hover Effect */
 .nav-links a:hover {
-    background-color: #64ffda;
-    color: #252626; /* Dark background on hover */
+    background-color: #462d20;
+    color: #dbc4b4; /* Dark background on hover */
 }
 
 /* Contact Links Styling */
