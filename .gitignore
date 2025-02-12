@@ -1,8 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 
-# Ignore the assets folder (images)
-/assets/
+
+# Ignore image files in assets folder
+/assets/*.jpg
+/assets/*.jpeg
+/assets/*.png
+/assets/*.gif
 
 # dependencies
 /node_modules
