@@ -64,13 +64,13 @@
 }
 
 .experience-item:hover {
-    background-color: #555;
+    background-color: #7b4e37;
     transform: scale(1.05);
 }
 
 .experience-item.active {
     background-color: #8B4513;
-    color: #fff;
+    color: #dbc4b4;
     font-weight: bold;
 }
 
