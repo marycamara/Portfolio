@@ -10,11 +10,12 @@
 
 /* BBC Link Styling */
 .bbc-link {
-    color: #dbc4b4;
+    color: #583828;
     /* Brown */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
 .bbc-link:hover {
@@ -69,13 +70,14 @@
 }
 
 .experience-item.active {
-    background-color: #8B4513;
+    background-color: #583828;
     color: #dbc4b4;
     font-weight: bold;
 }
 
 /* Experience Details Styling */
 .experience-details {
+    color: #dbc4b4;
     flex: 2;
     text-align: left;
     padding: 15px;

@@ -6,6 +6,7 @@ import About from "./components/About"; // Ensure the filename and import casing
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import CreateBy from './components/CreateBy'
+import WelcomeMessage from './components/WelcomeMessage';
 
 import './styles/home.css'; 
 import './styles/navbar.css'; 
@@ -16,8 +17,8 @@ function App() {
            
       <NavBar />
       <div id='content'>
+        <WelcomeMessage/> 
        
-  
         <About /> {/* Now using the About component correctly */}
            <Experience />
         <Projects />
