@@ -6,8 +6,9 @@
     padding: 25.2%;
     border-radius: #f9f9f9;
     margin: auto;
-    text-align: center;
+    text-align: center; 
 }
+
 
 
 .welcome-message {
@@ -16,6 +17,22 @@
     font: bold;
     text-align: center;
     margin-top: 50px;
+}
+
+.welcome-message::after { /* The blinking cursor effect*/
+    content: "|"; 
+    display: inline-block;
+    width: 10px;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+    color: #563c29;
+
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
 }
 
 .welcome-header {
