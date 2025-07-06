@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     z-index: 1000; /* Ensure it stays on top */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    
     background-color: #2c1c14; /* Background color for navbar */
     transition: background-color 0.3s ease; /* Smooth background color transition */
     width: 100%; /* Ensure navbar width stretches across */
@@ -51,8 +51,8 @@ body, html {
 
 /* Active Link Styling */
 .nav-links a.active {
-    color: #64ffda;
-    background-color: rgba(98, 93, 94, 0.8);
+    color: #dbc4b4;
+
 }
 
 /* Navigation Link Hover Effect */

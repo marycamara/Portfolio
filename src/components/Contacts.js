@@ -10,7 +10,7 @@ function Contacts() {
             {/* Social Media Links */}
             <ul id="social" className="clearfix">
                 <li>
-                    <a href="mailto:mary.camara@example.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:marycamara101@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img src={mailIcon} alt="Email" width="50" />
                     </a>
                 </li>

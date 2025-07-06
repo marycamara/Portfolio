@@ -32,16 +32,7 @@ function Experience() {
                 "Offering mentorship on university projects and software development."
             ]
         },
-        {
-            title: "Coventry University",
-            sideTitle: "University Projects", // Side title for list
-            date: "2020 - 2021",
-            description: [
-                "Developed a text-based game that challenges users based on their decisions.",
-                "Implemented object-oriented programming concepts for game mechanics.",
-                "Designed an interactive user experience using Python."
-            ]
-        }
+        
     ];
 
     return (
